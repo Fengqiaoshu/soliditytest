@@ -1,0 +1,325 @@
+{
+	"id": "6d97631892a95b93d8ad935d98faad8e",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"test/05-ERC20.sol": {
+				"content": "// SPDX-License-Identifier: Apache-2.0\r\npragma solidity^0.8.7;\r\n\r\n\r\n/*\r\n    调用erc20协议\r\n*/\r\n\r\ncontract useErc20{\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"test/05-ERC20.sol": {
+				"useErc20": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"test/05-ERC20.sol\":101:128  contract useErc20{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"test/05-ERC20.sol\":101:128  contract useErc20{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212204353a8a338c087271c6a6dae3d498b899358bc241cd01987a9aa214dcc87bac464736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204353a8a338c087271c6a6dae3d498b899358bc241cd01987a9aa214dcc87bac464736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 NUMBER MSTORE8 0xA8 LOG3 CODESIZE 0xC0 DUP8 0x27 SHR PUSH11 0x6DAE3D498B899358BC241C 0xD0 NOT DUP8 0xA9 0xAA 0x21 0x4D 0xCC DUP8 0xBA 0xC4 PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "101:27:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212204353a8a338c087271c6a6dae3d498b899358bc241cd01987a9aa214dcc87bac464736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 NUMBER MSTORE8 0xA8 LOG3 CODESIZE 0xC0 DUP8 0x27 SHR PUSH11 0x6DAE3D498B899358BC241C 0xD0 NOT DUP8 0xA9 0xAA 0x21 0x4D 0xCC DUP8 0xBA 0xC4 PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "101:27:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 101,
+									"end": 128,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212204353a8a338c087271c6a6dae3d498b899358bc241cd01987a9aa214dcc87bac464736f6c63430008070033",
+									".code": [
+										{
+											"begin": 101,
+											"end": 128,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 101,
+											"end": 128,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 101,
+											"end": 128,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 101,
+											"end": 128,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 101,
+											"end": 128,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 101,
+											"end": 128,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"test/05-ERC20.sol\":\"useErc20\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"test/05-ERC20.sol\":{\"keccak256\":\"0xfb1287de7d0cfee7ab1edb8c248acd93d9a0f62227f13ced58651783f5d1f3fa\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://9c4ee3f24bc5af4301a62f239d3f0f6e9e09fc701f3f0afaaf80f3d17e29606e\",\"dweb:/ipfs/QmZqQcta9fQ1vb2AJVBsrbdCZ43obwyJWZvHdAbtk5FrLJ\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"test/05-ERC20.sol": {
+				"ast": {
+					"absolutePath": "test/05-ERC20.sol",
+					"exportedSymbols": {
+						"useErc20": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "Apache-2.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "40:22:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "useErc20",
+							"nameLocation": "110:8:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "101:27:0",
+							"usedErrors": []
+						}
+					],
+					"src": "40:88:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

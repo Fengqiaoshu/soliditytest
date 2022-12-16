@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nameKey",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_ver",
+						"type": "string"
+					}
+				],
+				"name": "addContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nameKey",
+						"type": "string"
+					}
+				],
+				"name": "getInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "builder",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "crtAddr",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "version",
+								"type": "string"
+							}
+						],
+						"internalType": "struct ContratInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test/07-register.sol": "register_demo"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test/07-register.sol": {
+			"keccak256": "0xaa39e07b10f7ab27986451b09b3189abd338b672b55ce171d136497f1cb88c63",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://dad52d50efd2705815e1e2c4b64b57465c5049f135f68c0e12b7fdff8b1caa29",
+				"dweb:/ipfs/QmYKerGyBKWPD8niVhfG9ckqBCWUDoR1R84ozkmbjgEZCx"
+			]
+		}
+	},
+	"version": 1
+}

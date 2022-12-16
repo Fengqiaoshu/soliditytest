@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAllCars",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_val",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_ver",
+						"type": "string"
+					}
+				],
+				"name": "product",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"test/06-factory.sol": "factory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"test/06-factory.sol": {
+			"keccak256": "0x53bf0d428b3bc214b6fbf2ef9023c93024e8130cff61cb4a3d94ca577ab1b04b",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://b8dbf123afdf36fa967bf14d9498b5c02959ebdecd80cca5464f0af34154a458",
+				"dweb:/ipfs/QmNnbCJJTN6Wh6X58peAKRCJEedDSysL8gMUPgcGG5d5FU"
+			]
+		}
+	},
+	"version": 1
+}

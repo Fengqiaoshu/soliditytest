@@ -13,14 +13,14 @@ interface IEvdence{
 }
 
 // 存证合约  继承接口
-contract MarrigeEvidence is IEvdence {
+contract MarriageEvidence is IEvdence {
     // 先定义数据
     string evidence;                // 存证信息
     address[] needSigners;          // 需要签名的列表
     address[]  signers;             // 签过名的列表
     
     //event
-    event NewMarrigeEvidence(string _evi,address _sender,address _a,address _b);
+    event NewMarriageEvidence(string _evi,address _sender,address _a,address _b);
     event AddRepeatSignaturesEvidence(string _evi,address _sender);
     event AddSignaturesEvidence(string _evi,address _sender);
 
@@ -40,7 +40,7 @@ contract MarrigeEvidence is IEvdence {
         needSigners.push(_b);
         signers.push(tx.origin);
         evidence = _evi;
-        emit NewMarrigeEvidence(_evi,tx.origin,_a,_b);
+        emit NewMarriageEvidence(_evi,tx.origin,_a,_b);
         
     }
 

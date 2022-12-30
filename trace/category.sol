@@ -11,7 +11,7 @@ contract Category{
     }
     byte32 currentCategory;             // 商品種類
     mapping(uint256 =>GoodsData) goods;
-
+    uint8 constant STATUS_INVALID = 255;
     event NewGoods(address _operator,uint256 _goodsID);
     constructor(bytes32 _category){
         currentCategory = _category;
@@ -31,8 +31,20 @@ contract Category{
 
     function getStatus(uint256 _goodID)public view returns(uint8){
         if(!goods[_goodID].isExists){
-            return Goods.;
+            return STATUS_INVALID;
         }
         return goods[_goodID].traceData.getStatus();
     }
+
+    function changeStatus(uint256 _goodID,uint8 _status,string memory _remaek)public returns(bool){
+        goods[_goodID].traceData.changeStatus(_status,_remaek);
+    }
+
+
+    function getDoods(uint256 _goodID) public view returns(bool,Goods) {
+        return(goods[_goodID].isExists,goods[_goodID].traceData);
+    }
+
+
+
 }

@@ -23,7 +23,7 @@ contract spinach{
 
         // 构造函数每次合约部署时执行一次
         constructor (uint256 _min) {
-            owner = msg.sender：                 // 合约部署人的地址
+            owner = msg.sender;                 // 合约部署人的地址
             isFinished = false;                 // 合约部署的给予默认值
             minBetAmount = _min;                // 给最小下注赋值
             endTime = block.timestamp + 120;    // 定义当前时间戳 + 120秒
@@ -55,7 +55,7 @@ contract spinach{
         //开奖 按照下注金额分配
         function open( )public payable{
             // 计算随机数 【0-17】以内的随机数   small{0,1,2,3,4,5,6,7,8}  big{9,10,11,12,13,14,15,16,17}
-            uint256 ramdom = uint256(keccak256(adi.encode(block.timestamp,msg.sender,owner,totalBigAmount)))  % 18;                   // 计算随机数 然后针对18取余
+            uint256 randnum = uint256(keccak256(abi.encode(block.timestamp,msg.sender,owner,totalBigAmount)))  % 18;                   // 计算随机数 然后针对18取余
             // 判断随机数大小
             if(randnum <= 8){
                 // small  big的钱=>smallsmall
